@@ -1,0 +1,19 @@
+﻿using ZelnyTrh.EF.DAL.Enums;
+
+namespace ZelnyTrh.EF.BL.DTOs.OfferDTO;
+
+public class OfferListDto
+{
+    public required string Id { get; set; }
+    public required string Name { get; set; }
+    public required double Price { get; set; }
+    public required string Currency { get; set; }
+    public required decimal Amount { get; set; }
+    public required int UnitsAvailable { get; set; }
+    public required string Origin { get; set; }
+    public required OfferType OfferType { get; set; }
+    public required string CropName { get; set; }
+    public required string FarmerName { get; set; }
+    public double AverageRating { get; set; }
+    public int ReviewsCount { get; set; }
+}
